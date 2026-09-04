@@ -1,9 +1,16 @@
-using System;
-
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello World! This is the Exercise1 Project.");
+        string first = GetInput("What is your first name? ");
+        string last = GetInput("What is your last name? ");
+
+        Console.WriteLine($"Your name is {last}, {first} {last}.");
+    }
+
+    static string GetInput(string prompt)
+    {
+        Console.Write(prompt);
+        return Console.ReadLine();
     }
 }
